@@ -1,0 +1,428 @@
+<!-- Build: RESPON-20260408-002 | Release: #50 | RESPON-20260408-002 | Env: STAGING -->
+<!-- Project: 132 | Author: 1dd174a8-8af8-4803-979e-8b0d9a3ef4bf | Generated: 2026-04-08T09:37:36.557Z | Build: #2 -->
+<!-- Project: 132 | Author: 1dd174a8-8af8-4803-979e-8b0d9a3ef4bf | Generated: 2026-04-07T11:12:35.533Z | Build: #1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chapter & Verse | Minimalist Bookstore</title>
+    <meta name="description" content="Discover our meticulously crafted collection of contemporary fiction, timeless classics, and insightful non-fiction at Chapter & Verse, a minimalist bookstore for the modern mind.">
+
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chapterverse.com/">
+    <meta property="og:title" content="Chapter & Verse | Minimalist Bookstore">
+    <meta property="og:description" content="Curated reads for the modern mind. Discover our meticulously crafted collection of contemporary fiction, timeless classics, and insightful non-fiction.">
+    <meta property="og:image" content="https://loremflickr.com/1200/800/book,reading?lock=85458">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    <meta property="og:site_name" content="Chapter & Verse">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://chapterverse.com/">
+    <meta name="twitter:title" content="Chapter & Verse | Minimalist Bookstore">
+    <meta name="twitter:description" content="Curated reads for the modern mind. Discover our meticulously crafted collection of contemporary fiction, timeless classics, and insightful non-fiction.">
+    <meta name="twitter:image" content="https://loremflickr.com/1200/800/book,reading?lock=85457">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="site-nav">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="https://276ad44e-1474-4dda-a61a-a86f92573af8-00-2vyewv3pxsunx.kirk.replit.dev/api/projects/132/assets/3" alt="App Logo" onerror="this.onerror=null;this.src='https://loremflickr.com/100/100/book,reading?lock=85456'">
+            </a>
+            
+            <div class="nav-links">
+                <a href="#bestsellers">Bestsellers</a>
+                <a href="#genres">General</a>
+                <a href="#new-releases">New Arrivals</a>
+                <a href="#blog">Journal</a>
+                <a href="#live-room" id="join-live-btn"><span class="live-pulse"></span>Live Room</a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="search-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" id="site-search" placeholder="Search titles, authors..." aria-label="Search books">
+                </div>
+                <button id="cart-toggle" aria-label="Open Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
+        <div class="cart-drawer-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart" aria-label="Close Cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items injected here -->
+            <div class="empty-cart-msg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line></svg>
+                <p>Your cart is empty.</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full disabled" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Live Reading Room Overlay -->
+    <div class="live-room-overlay" id="live-room-overlay" aria-hidden="true">
+        <div class="live-room-container">
+            <header class="live-room-header">
+                <div class="host-info">
+                    <span class="live-badge">LIVE</span>
+                    <h2>Reading: <span class="book-title">The Silent Echo</span></h2>
+                    <p>Host: Elena Vance</p>
+                </div>
+                <button class="close-live-room" id="close-live-room" aria-label="Close Room">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </header>
+            <div class="live-room-content">
+                <div class="reading-panel">
+                    <div class="text-content" id="live-text-content">
+                        <p><span class="sync-text" data-index="0">The rain pounded against the windowpane, a relentless drumbeat matching the rhythm of her racing heart.</span> <span class="sync-text" data-index="1">She stared into the darkness, searching for a sign, any sign, that he was out there.</span> <span class="sync-text" data-index="2">But there was only the silent echo of her own thoughts, rebounding off the walls of the empty room.</span> <span class="sync-text" data-index="3">It had been three days since the incident, and still, the pieces of the puzzle refused to fit together.</span></p>
+                        <p><span class="sync-text" data-index="4">Every shadow seemed to hide a secret, every whisper of the wind carried a hidden message.</span> <span class="sync-text" data-index="5">She took a deep breath, trying to steady her trembling hands, and reached for the worn leather-bound journal on the desk.</span> <span class="sync-text" data-index="6">The answers had to be in here, somewhere among the cryptic notes and faded sketches.</span></p>
+                        <p><span class="sync-text" data-index="7">As she flipped through the pages, a loose photograph slipped out and fluttered to the floor.</span> <span class="sync-text" data-index="8">It was a picture of the two of them, taken years ago when everything was still simple.</span> <span class="sync-text" data-index="9">A pang of nostalgia hit her, sharply contrasted by the cold reality of the present.</span> <span class="sync-text" data-index="10">She picked it up, her thumb brushing over his smiling face, before tucking it safely back inside the journal.</span></p>
+                    </div>
+                </div>
+                <aside class="live-interaction-sidebar">
+                    <div class="chat-area" id="live-chat-area">
+                        <div class="chat-message"><span class="chat-user">System:</span> Welcome to the live reading of "The Silent Echo".</div>
+                        <div class="chat-message"><span class="chat-user">Alex:</span> This part is so intense!</div>
+                        <div class="chat-message"><span class="chat-user">Mia:</span> I know, I can't wait to see what happens.</div>
+                    </div>
+                    <div class="interaction-controls">
+                        <div class="reaction-bar">
+                            <button type="button" class="reaction-btn" data-emoji="❤️" aria-label="Love">❤️</button>
+                            <button type="button" class="reaction-btn" data-emoji="👏" aria-label="Clap">👏</button>
+                            <button type="button" class="reaction-btn" data-emoji="😮" aria-label="Wow">😮</button>
+                        </div>
+                        <form class="chat-form" id="live-chat-form">
+                            <input type="text" id="live-chat-input" placeholder="Say something..." autocomplete="off" required>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content reveal">
+                <h1>Curated reads for the modern mind.</h1>
+                <p>Discover our meticulously crafted collection of contemporary fiction, timeless classics, and insightful non-fiction.</p>
+                <a href="#bestsellers" class="btn btn-primary">Shop Collection</a>
+            </div>
+            <div class="hero-slider reveal">
+                <div class="slides">
+                    <div class="slide active">
+                        <img src="https://loremflickr.com/1200/800/book,reading?lock=14738" alt="Recently Published: The Silent Echo" onerror="this.onerror=null;this.src='https://loremflickr.com/1200/800/book,reading?lock=14738'">
+                        <div class="slide-caption">Recently Published: The Silent Echo</div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://loremflickr.com/1200/800/book,reading?lock=84685" alt="Recently Published: Urban Botanics" onerror="this.onerror=null;this.src='https://loremflickr.com/1200/800/book,reading?lock=84685'">
+                        <div class="slide-caption">Recently Published: Urban Botanics</div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://loremflickr.com/1200/800/book,reading?lock=39031" alt="Recently Published: Thinking Slow" onerror="this.onerror=null;this.src='https://loremflickr.com/1200/800/book,reading?lock=39031'">
+                        <div class="slide-caption">Recently Published: Thinking Slow</div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" aria-label="Previous slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <button class="slider-btn next-btn" aria-label="Next slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="bestsellers" class="section">
+            <div class="section-header reveal">
+                <h2>Bestsellers</h2>
+                <p>Our most loved titles this month.</p>
+            </div>
+            <div class="book-grid">
+                <article class="book-card reveal" data-id="b1" data-title="The Silent Echo" data-price="24.00" data-author="Elena Vance">
+                    <div class="book-cover">
+                        <img src="https://loremflickr.com/400/600/book,reading?lock=61602" alt="Cover of The Silent Echo" onerror="this.onerror=null;this.src='https://loremflickr.com/400/600/book,reading?lock=61602'">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">The Silent Echo</h3>
+                        <p class="book-author">Elena Vance</p>
+                        <p class="book-price">$24.00</p>
+                    </div>
+                </article>
+                <article class="book-card reveal delay-1" data-id="b2" data-title="Minimalist Living" data-price="18.50" data-author="Arthur Dent">
+                    <div class="book-cover">
+                        <img src="https://i.pravatar.cc/300?img=1" alt="Cover of Minimalist Living" onerror="this.onerror=null;this.src='https://i.pravatar.cc/300?img=2'">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Minimalist Living</h3>
+                        <p class="book-author">Arthur Dent</p>
+                        <p class="book-price">$18.50</p>
+                    </div>
+                </article>
+                <article class="book-card reveal delay-2" data-id="b3" data-title="Geometry of Design" data-price="32.00" data-author="Marcus Cole">
+                    <div class="book-cover">
+                        <img src="https://i.pravatar.cc/300?img=2" alt="Cover of Geometry of Design" onerror="this.onerror=null;this.src='https://i.pravatar.cc/300?img=3'">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Geometry of Design</h3>
+                        <p class="book-author">Marcus Cole</p>
+                        <p class="book-price">$32.00</p>
+                    </div>
+                </article>
+                <article class="book-card reveal delay-3" data-id="b4" data-title="Oceans of Time" data-price="21.00" data-author="Sarah Jenkins">
+                    <div class="book-cover">
+                        <img src="https://i.pravatar.cc/300?img=3" alt="Cover of Oceans of Time" onerror="this.onerror=null;this.src='https://i.pravatar.cc/300?img=4'">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Oceans of Time</h3>
+                        <p class="book-author">Sarah Jenkins</p>
+                        <p class="book-price">$21.00</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="genres" class="section bg-light">
+            <div class="section-header reveal">
+                <h2>General</h2>
+            </div>
+            <div class="genre-grid">
+                <a href="#genre-fiction" class="genre-card reveal">
+                    <img src="https://loremflickr.com/600/800/book,reading?lock=68236" alt="Fiction Books" onerror="this.onerror=null;this.src='https://loremflickr.com/600/800/book,reading?lock=68236'">
+                    <div class="genre-overlay">
+                        <h3>Fiction</h3>
+                    </div>
+                </a>
+                <a href="#genre-non-fiction" class="genre-card reveal delay-1">
+                    <img src="https://loremflickr.com/600/800/book,reading?lock=99466" alt="Non-Fiction Books" onerror="this.onerror=null;this.src='https://loremflickr.com/600/800/book,reading?lock=99466'">
+                    <div class="genre-overlay">
+                        <h3>Non-Fiction</h3>
+                    </div>
+                </a>
+                <a href="#genre-design" class="genre-card reveal delay-2">
+                    <img src="https://loremflickr.com/600/800/book,reading?lock=17114" alt="Design Books" onerror="this.onerror=null;this.src='https://loremflickr.com/600/800/book,reading?lock=17114'">
+                    <div class="genre-overlay">
+                        <h3>Architecture & Design</h3>
+                    </div>
+                </a>
+                <a href="#genre-poetry" class="genre-card reveal delay-3">
+                    <img src="https://loremflickr.com/600/800/book,reading?lock=42431" alt="Poetry Books" onerror="this.onerror=null;this.src='https://loremflickr.com/600/800/book,reading?lock=42431'">
+                    <div class="genre-overlay">
+                        <h3>Poetry & Essays</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="new-releases" class="section">
+            <div class="section-header reveal">
+                <h2>New Arrivals</h2>
+                <p>Fresh off the press into our curated collection.</p>
+            </div>
+            <div class="book-grid">
+                <article class="book-card reveal" data-id="n1" data-title="Urban Botanics" data-price="28.00" data-author="Mila Rossi">
+                    <div class="book-cover">
+                        <img src="https://loremflickr.com/400/600/book,reading?lock=39742" alt="Cover of Urban Botanics" onerror="this.onerror=null;this.src='https://loremflickr.com/400/600/book,reading?lock=39742'">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Urban Botanics</h3>
+                        <p class="book-author">Mila Rossi</p>
+                        <p class="book-price">$28.00</p>
+                    </div>
+                </article>
+                <article class="book-card reveal delay-1" data-id="n2" data-title="Thinking Slow" data-price="19.99" data-author="Dr. Alan Watts">
+                    <div class="book-cover">
+                        <img src="https://i.pravatar.cc/300?img=4" alt="Cover of Thinking Slow" onerror="this.onerror=null;this.src='https://i.pravatar.cc/300?img=5'">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Thinking Slow</h3>
+                        <p class="book-author">Dr. Alan Watts</p>
+                        <p class="book-price">$19.99</p>
+                    </div>
+                </article>
+                <article class="book-card reveal delay-2" data-id="n3" data-title="The Last Letter" data-price="22.50" data-author="Julia Winters">
+                    <div class="book-cover">
+                        <img src="https://i.pravatar.cc/300?img=5" alt="Cover of The Last Letter" onerror="this.onerror=null;this.src='https://i.pravatar.cc/300?img=6'">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">The Last Letter</h3>
+                        <p class="book-author">Julia Winters</p>
+                        <p class="book-price">$22.50</p>
+                    </div>
+                </article>
+                <article class="book-card reveal delay-3" data-id="n4" data-title="Space & Form" data-price="45.00" data-author="Kenji Sato">
+                    <div class="book-cover">
+                        <img src="https://i.pravatar.cc/300?img=6" alt="Cover of Space & Form" onerror="this.onerror=null;this.src='https://i.pravatar.cc/300?img=7'">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Space & Form</h3>
+                        <p class="book-author">Kenji Sato</p>
+                        <p class="book-price">$45.00</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="blog" class="section bg-light">
+            <div class="section-header reveal">
+                <h2>Journal</h2>
+                <p>Thoughts, interviews, and stories from the literary world.</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <div class="blog-image">
+                        <img src="https://loremflickr.com/800/500/book,reading?lock=15516" alt="The Art of Slow Reading" onerror="this.onerror=null;this.src='https://loremflickr.com/800/500/book,reading?lock=15516'">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">Oct 12, 2023 · Reading Habits</div>
+                        <h3 class="blog-title">The Art of Slow Reading</h3>
+                        <p class="blog-excerpt">In a world obsessed with speed reading and book summaries, we explore the profound benefits of taking your time with a good book.</p>
+                        <a href="#join-live-btn" class="blog-read-more">Read Article <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                    </div>
+                </article>
+                <article class="blog-card reveal delay-1">
+                    <div class="blog-image">
+                        <img src="https://loremflickr.com/800/500/book,reading?lock=80453" alt="Interview with Elena Vance" onerror="this.onerror=null;this.src='https://loremflickr.com/800/500/book,reading?lock=80453'">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">Sep 28, 2023 · Author Interview</div>
+                        <h3 class="blog-title">A Conversation with Elena Vance</h3>
+                        <p class="blog-excerpt">The author of 'The Silent Echo' discusses her creative process, the challenges of writing her sophomore novel, and her literary inspirations.</p>
+                        <a href="#site-search" class="blog-read-more">Read Article <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                    </div>
+                </article>
+                <article class="blog-card reveal delay-2">
+                    <div class="blog-image">
+                        <img src="https://loremflickr.com/800/500/book,reading?lock=89044" alt="Building a Minimalist Library" onerror="this.onerror=null;this.src='https://loremflickr.com/800/500/book,reading?lock=89044'">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">Sep 15, 2023 · Curation</div>
+                        <h3 class="blog-title">Building a Minimalist Library</h3>
+                        <p class="blog-excerpt">How to curate a collection of books that truly matter to you, keeping your space uncluttered while maintaining a rich literary environment.</p>
+                        <a href="#cart-toggle" class="blog-read-more">Read Article <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="newsletter" class="section newsletter-section bg-dark">
+            <div class="newsletter-content reveal">
+                <h2>Join the Chapter</h2>
+                <p>Subscribe to our newsletter for curated reading lists, author interviews, and exclusive early access to new collections.</p>
+                
+                <form id="newsletter-form" class="newsletter-form" novalidate>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <div class="error-message" id="email-error">Please enter a valid email address.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Subscribe</button>
+                </form>
+                <div id="form-feedback" class="form-feedback"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col brand">
+                <img src="https://276ad44e-1474-4dda-a61a-a86f92573af8-00-2vyewv3pxsunx.kirk.replit.dev/api/projects/132/assets/3" alt="App Logo" style="height: 48px; margin-bottom: 1rem;" onerror="this.onerror=null;this.src='https://loremflickr.com/100/100/book,reading?lock=85455'">
+                <p>A minimalist sanctuary for readers and thinkers. We believe in the power of a well-crafted book.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <a href="#bestsellers">Bestsellers</a>
+                <a href="#new-releases">New Arrivals</a>
+                <a href="#genres">General</a>
+                <a href="#home">Gift Cards</a>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <a href="#home">About Us</a>
+                <a href="#blog">Journal</a>
+                <a href="#home">Shipping & Returns</a>
+                <a href="#home">Privacy Policy</a>
+                <a href="#home">Terms of Service</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <p>123 Literary Lane, NY 10001</p>
+                <p>hello@chapterverse.com</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Chapter & Verse. All rights reserved.</p>
+        </div>
+    </footer>
+<script data-crearity-form-relay="1">
+(function(){
+  var PID=132;
+  document.addEventListener('submit',function(e){
+    var form=e.target;
+    if(!form||form.tagName!=='FORM')return;
+    var action=form.getAttribute('action')||'';
+    if(/^(https?:|mailto:)/i.test(action))return;
+    var fields={};
+    try{new FormData(form).forEach(function(v,k){fields[k]=String(v);});}catch(_){}
+    try{fetch('/api/project-email',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({projectId:PID,fields:fields})}).catch(function(){});}catch(_){}
+  },true);
+})();
+</script>
+</body>
+</html>
